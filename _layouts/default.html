@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}</title>
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <meta name="applicable-device" content="pc,mobile">
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/wanjinlong-icon.jpg">
+    <meta name="apple-mobile-web-app-title" content="WANJINLONG">
+    <link type="text/css" rel="stylesheet" href="/assets/application.css">
+    <!--[if lt IE 9]>
+      <script src="/assets/html5shiv.min.js"></script>
+      <script src="/assets/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header id="luxbar" class="luxbar-fixed">
+      <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox">
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-white">
+        <div class="container">
+          <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+              <a href="{{ site.url }}"><img src="{{ site.url }}/images/assets/wanjinlong-logo.png" width="270" height="53" alt="WANJINLONG Logo"></a>
+              <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+            </li>
+            <li class="luxbar-item dropdown {% if page.category == 'products' %}active{% endif %}"><a>Products</a>
+              <ul>
+                <li class="luxbar-item {% if page.title == 'Steel Structure Building' %}active{% endif %}"><a href="{{ site.url }}/steel-structure-building/">Steel Structure Building</a></li>
+                <li class="luxbar-item {% if page.title == 'Container House' %}active{% endif %}"><a href="{{ site.url }}/container-house/">Container House</a></li>
+                <li class="luxbar-item {% if page.title == 'Prefab House' %}active{% endif %}"><a href="{{ site.url }}/prefab-house/">Prefab House</a></li>
+                <li class="luxbar-item {% if page.title == 'Sandwich Panel' %}active{% endif %}"><a href="{{ site.url }}/sandwich-panel/">Sandwich Panel</a></li>
+              </ul>
+            </li>
+            <li class="luxbar-item {% if page.category == 'case' %}active{% endif %}"><a href="{{ site.url }}/case/">Case</a></li>
+            <li class="luxbar-item {% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
+            <li class="luxbar-item dropdown {% if page.category == 'about' %}active{% endif %}"><a>About</a>
+              <ul>
+                <li class="luxbar-item {% if page.title == 'About WANJINLONG' %}active{% endif %}"><a href="{{ site.url }}/about/">About WANJINLONG</a></li>
+                <li class="luxbar-item {% if page.title == 'History' %}active{% endif %}"><a href="{{ site.url }}/history/">History</a></li>
+                <li class="luxbar-item {% if page.title == 'Honors' %}active{% endif %}"><a href="{{ site.url }}/honors/">Honors</a></li>
+              </ul>
+            </li>
+            <li class="luxbar-item {% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="margin-top-58"></div>
+    {{ content }}
+    <footer>
+      <div class="footer clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">
+              <div class="footerContent">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-home"></i>{{ site.address }}</li>
+                  <li><i class="fa fa-phone"></i><a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a></li>
+                  <li><i class="fa fa-phone"></i><a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a></li>
+                  <li><i class="fa fa-fax"></i>{{ site.fax }}</li>
+                  <li><i class="fa fa-envelope-o"></i><a href="mailTo:{{ site.email }}">{{ site.email }}</a></li>
+                </ul>
+                <ul class="list-inline">
+                  <li><a href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="footerContent">
+                <h5>Products</h5>
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/steel-structure-building/">Steel Structure Building</a></li>
+                  <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/container-house/">Container House</a></li>
+                  <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/prefab-house/">Prefab House</a></li>
+                  <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/sandwich-panel/">Sandwich Panel</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-5 col-xs-12 hidden-xs">
+              <div class="footerContent">
+                <h5>Last News</h5>
+                <ul class="list-unstyled">{% for post in site.categories["news"] limit:7 %}
+                  <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight clearfix">
+        <div class="container">
+          <div class="col-sm-12 text-center">Copyright © 1998-2019 Beijing Wan Jin Long Color-Coated Steel Products Co.,Ltd. | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website design by <a href="https://gdky.net" target="_blank">OSW</a></div>
+        </div>
+      </div>
+    </footer>
+    <div class="back-to-top"><a href="#"><img src="{{ site.url }}/images/assets/up.png" width="36" height="36" alt="Back To Top"></a></div>{% if page.category == 'home' %}
+    <script type="text/javascript" src="/assets/application.js"></script>{% endif %}
+  </body>
+</html>

@@ -1,0 +1,38 @@
+---
+layout: pages
+---
+<section class="mainContentSection packagesSection">
+  <div class="container">
+    {{ content }}{% if page.title == 'Villa' or page.title == 'Sandwich Panel' %}{% else %}
+    <h3 class="margin-top-30 margin-bottom-30 text-center">{{ page.title }} Case</h3>
+    <div class="row margin-top-30 margin-bottom-30">{% for post in site.categories["case"] %}{% if post.type-pro == page.image %}
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+        <div class="thumbnail deals hotelgrid">
+          <a href="{{ site.url }}{{ post.url }}"><img src="/images/case/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
+          <div class="caption text-center">
+            <h4 class="captionTitle">{{ post.title }}</h4>
+          </div>
+        </div>
+      </div>{% endif %}{% endfor %}
+    </div>{% endif %}
+    <p class="text-center"><a href="mailTo:duo@wjlsteelstructure.com" class="btn buttonTransparent margin-top-30">Email Us</a></p>{% if page.type-en == 'prefab-house' %}
+    <div class="row margin-top-58">
+      <div class="col-xs-12">
+        <div class="sectionTitle">
+          <h2><span class="lightBg">Prefab House</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">{% for post in site.categories["prefab-house"] %}
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+        <div class="thumbnail deals hotelgrid">
+          <a href="{{ site.url }}{{ post.url }}"><img src="/images/prefab-house/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
+          <div class="caption text-center">
+            <h4 class="captionTitle">{{ post.title }}</h4>
+          </div>
+        </div>
+      </div>{% endfor %}
+    </div>{% endif %}
+  </div>
+</section>
+{% include products-list.html %}

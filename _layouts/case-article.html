@@ -1,0 +1,30 @@
+---
+layout: pages
+---
+<section class="mainContentSection">
+  <div class="container">
+    {{ content }}
+    <p class="text-center"><a href="mailTo:{{ site.email }}" class="btn buttonTransparent margin-top-30">Email Us</a></p>
+  </div>
+</section>
+<section class="mainContentSection packagesSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="sectionTitle">
+          <h2><span class="lightBg">More Case</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">{% for post in site.categories["case"] %}
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+        <div class="thumbnail deals hotelgrid">
+          <a href="{{ site.url }}{{ post.url }}"><img src="/images/case/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
+          <div class="caption text-center">
+            <h4 class="captionTitle">{{ post.title }}</h4>
+          </div>
+        </div>
+      </div>{% endfor %}
+    </div>
+  </div>
+</section>

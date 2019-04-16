@@ -1,0 +1,92 @@
+---
+layout: default
+category: home
+full_title: WANJINLONG-steel structure
+---
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"><a href="{{ site.url }}/steel-structure-building/"><img src="/images/home/billboard-steel-structure-building.jpg" alt="Steel Structure Building"></a></div>
+    <div class="item"><a href="{{ site.url }}/container-house/"><img src="/images/home/billboard-container-house.jpg" alt="Container House"></a></div>
+    <div class="item"><a href="{{ site.url }}/prefab-house/"><img src="/images/home/billboard-prefab-house.jpg" alt="Prefab House"></a></div>
+  </div>
+</div>
+{% include products-list.html %}
+<section class="mainContentSection packagesSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="sectionTitle">
+          <h2><span class="lightBg">Case</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">{% for post in site.categories["case"] %}{% if post.home == 'home' %}
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+        <div class="thumbnail deals hotelgrid">
+          <a href="{{ site.url }}{{ post.url }}"><img src="/images/case/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
+          <div class="caption text-center">
+            <h4 class="captionTitle">{{ post.title }}</h4>
+          </div>
+        </div>
+      </div>{% endif %}{% endfor %}
+      <div class="col-lg-12 col-sm-12 col-xs-12 margin-top-30">
+        <p class="text-center"><a href="{{ site.url }}/case/" class="btn buttonTransparent">Learn More</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="whiteSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="sectionTitle">
+          <h2><span>About WANJINLONG</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <p align="center"><a href="{{ site.url }}/about/"><img class="img-responsive img-thumbnail margin-bottom-20" alt="About WANJINLONG" src="/images/home/about.jpg"></a></p>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="margin-top-10 margin-bottom-20">WANJINLONG</h3>
+        <p class="text-justify margin-bottom-20">Wan Jin Long Group Corporation, established in 1990s,is a powerful group enterprise with great advantage in the filed of light steel structure,Prefabricated houses ,new building material and international trading.Now it has owned four sub-companies:Baotou City Wan Jin Long Color Steel Plate Co.,Ltd. Wu Chang Wan Jin Long Color Steel Plate Co.,Ltd.The headquarter is located in Tongzhou district,Beijing city,having an area of 500 acres for production base totally and more than 170,000 square meters for manufacturing plant.It almost has one thousand employees,including more than two hundred for technical R&D,with a number of the most advanced CNC automatic production lines and colored steel as a whole.After about 20 years’ development ,our company has laid a solid foundation,enhancing the enterprise’s core competitiveness.</p>
+        <p><a href="{{ site.url }}/about/" class="btn buttonTransparent">Learn More</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mainContentSection packagesSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="sectionTitle">
+          <h2><span class="lightBg">News</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">{% for post in site.categories["news"] limit:3 %}
+      <div class="col-sm-4 col-xs-12">
+        <div class="thumbnail blogPostItem">
+          <a href="{{ site.url }}{{ post.url }}">
+            <img src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}">
+          </a>
+          <div class="caption text-center">
+            <h3><a href="{{ site.url }}{{ post.url }}" class="blogTitle">{{ post.title }}</a></h3>
+            <ul class="list-inline blogInfo">
+              <li><i class="fa fa-calendar"></i>{{ post.date | date:"%d %b %Y" }}</li>
+              <li><i class="fa fa-tags"></i>{{ post.keywords }}</li>
+            </ul>
+            <p>{{ post.description }}</p>
+            <a href="{{ site.url }}{{ post.url }}" class="btn buttonTransparent">Read More</a>
+          </div>
+        </div>
+      </div>{% endfor %}
+    </div>
+  </div>
+</section>

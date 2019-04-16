@@ -1,0 +1,23 @@
+---
+layout: pages
+permalink: /prefab-house/
+category: products
+image: prefab-house
+title: Prefab House
+keywords: 
+description: 
+---
+<section class="mainContentSection packagesSection">
+  <div class="container">
+    <div class="row">{% for post in site.categories["prefab-house"] %}
+      <div class="col-sm-6 col-lg-4 col-xs-12">
+        <div class="thumbnail deals hotelgrid">
+          <a href="{{ site.url }}{{ post.url }}"><img src="/images/prefab-house/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
+          <div class="caption text-center">
+            <h4 class="captionTitle">{{ post.title }}</h4>
+          </div>
+        </div>
+      </div>{% endfor %}
+    </div>
+  </div>
+</section>

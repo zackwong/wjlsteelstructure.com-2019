@@ -1,0 +1,22 @@
+---
+layout: pages
+---
+<section class="mainContentSection blogSidebar">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="thumbnail blogSinglePost">
+          <div class="caption">
+            <h2 class="text-center">{{ page.title }}</h2>
+            <ul class="list-inline blogInfo text-center">
+              <li><i class="fa fa-calendar"></i>{{ page.date | date:"%d %b %Y" }}</li>
+              <li><i class="fa fa-tags"></i>{{ page.keywords }}</li>
+            </ul>
+            {{ content }}
+            <p class="text-center"><a href="{{ site.url }}/news/" class="btn buttonTransparent margin-top-30">More News</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
