@@ -4,7 +4,7 @@ layout: pages
 <section class="mainContentSection">
   <div class="container">
     {{ content }}
-    <p class="text-center"><a href="mailTo:{{ site.email }}" class="btn buttonTransparent margin-top-30">Email Us</a></p>
+    <p class="text-center"><a href="mailto:{{ site.email }}" class="btn buttonTransparent margin-top-30">Email Us</a></p>
   </div>
 </section>
 <section class="mainContentSection packagesSection">
@@ -17,11 +17,13 @@ layout: pages
       </div>
     </div>
     <div class="row">{% for post in site.categories["case"] %}
-      <div class="col-lg-4 col-sm-6 col-xs-12">
-        <div class="thumbnail deals hotelgrid">
-          <a href="{{ site.url }}{{ post.url }}"><img src="/images/case/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
-          <div class="caption text-center">
-            <h4 class="captionTitle">{{ post.title }}</h4>
+      <div itemscope itemtype="http://schema.org/Article">
+        <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="thumbnail deals hotelgrid">
+            <a itemprop="url" href="{{ site.url }}{{ post.url }}"><img itemprop="thumbnailUrl" src="/images/case/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
+            <div class="caption text-center">
+              <h4 class="captionTitle"><span itemprop="headline">{{ post.title }}</span></h4>
+            </div>
           </div>
         </div>
       </div>{% endfor %}

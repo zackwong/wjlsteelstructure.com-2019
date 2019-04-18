@@ -86,10 +86,18 @@
               <div class="footerContent">
                 <h5>Products</h5>
                 <ul class="list-unstyled">
-                  <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/steel-structure-building/">Steel Structure Building</a></li>
-                  <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/container-house/">Container House</a></li>
-                  <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/prefab-house/">Prefab House</a></li>
-                  <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}/sandwich-panel/">Sandwich Panel</a></li>
+                  <div itemscope itemtype="http://schema.org/Product">
+                    <li><i class="fa fa-angle-double-right"></i><a itemprop="url" href="{{ site.url }}/steel-structure-building/"><span itemprop="name">Steel Structure Building</span></a></li>
+                  </div>
+                  <div itemscope itemtype="http://schema.org/Product">
+                    <li><i class="fa fa-angle-double-right"></i><a itemprop="url" href="{{ site.url }}/container-house/"><span itemprop="name">Container House</span></a></li>
+                  </div>
+                  <div itemscope itemtype="http://schema.org/Product">
+                    <li><i class="fa fa-angle-double-right"></i><a itemprop="url" href="{{ site.url }}/prefab-house/"><span itemprop="name">Prefab House</span></a></li>
+                  </div>
+                  <div itemscope itemtype="http://schema.org/Product">
+                    <li><i class="fa fa-angle-double-right"></i><a itemprop="url" href="{{ site.url }}/sandwich-panel/"><span itemprop="name">Sandwich Panel</span></a></li>
+                  </div>
                 </ul>
               </div>
             </div>
@@ -108,7 +116,9 @@
       </div>
       <div class="copyRight clearfix">
         <div class="container">
-          <div class="col-sm-12 text-center">Copyright © 1998-2019 Beijing Wan Jin Long Color-Coated Steel Products Co.,Ltd. | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website design by <a href="https://gdky.net" target="_blank">OSW</a></div>
+          <div itemscope itemtype="http://schema.org/Organization">
+            <div class="col-sm-12 text-center">Copyright © 1998-2019 <span itemprop="name">Beijing Wan Jin Long Color-Coated Steel Products Co.,Ltd.</span> | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website design by <a href="https://gdky.net" target="_blank">OSW</a></div>
+          </div>
         </div>
       </div>
     </footer>
