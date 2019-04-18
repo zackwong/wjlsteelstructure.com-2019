@@ -6,60 +6,62 @@ title: Contact Us
 ---
 <section class="mainContentSection">
   <div class="container">
-    <div class="contactInfo">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="media">
-          <a class="media-left"><i class="fa fa-map-marker"></i></a>
-          <div class="media-body">
-            <h4 class="media-heading">Address</h4>
-            <p>{{ site.address }}</p>
+    <div itemscope itemtype="http://schema.org/Organization">
+      <div class="contactInfo">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="media">
+            <a class="media-left"><i class="fa fa-map-marker"></i></a>
+            <div class="media-body">
+              <h4 class="media-heading">Address</h4>
+              <p><span itemprop="address">{{ site.address }}</span></p>
+            </div>
+           </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="media">
+            <a class="media-left"><i class="fa fa-phone"></i></a>
+            <div class="media-body">
+              <h4 class="media-heading">Phone</h4>
+              <p><span itemprop="telephone">{{ site.tel1 }}</span></p>
+              <p><span itemprop="telephone">{{ site.tel2 }}</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="media">
+            <a class="media-left"><i class="fa fa-fax"></i></a>
+            <div class="media-body">
+              <h4 class="media-heading">Fax</h4>
+              <p><span itemprop="faxNumber">{{ site.fax }}</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="media">
+            <a class="media-left"><i class="fa fa-envelope"></i></a>
+            <div class="media-body">
+              <h4 class="media-heading">Email Us</h4>
+              <p><a href="mailTo:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="media">
+            <a class="media-left"><i class="fa fa-users"></i></a>
+            <div class="media-body">
+              <h4 class="media-heading">Follow Us</h4>
+              <ul class="list-inline margin-top-10">
+                <li><a itemprop="url" href="{{ site.facebook }}" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x text-white"></i></span></a></li>
+                <li><a itemprop="url" href="{{ site.twitter }}" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x text-white"></i></span></a></li>
+                <li><a itemprop="url" href="{{ site.linkedin }}" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x text-white"></i></span></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="media">
-          <a class="media-left"><i class="fa fa-phone"></i></a>
-          <div class="media-body">
-            <h4 class="media-heading">Phone</h4>
-            <p>{{ site.tel1 }}</p>
-            <p>{{ site.tel2 }}</p>
-          </div>
-        </div>
+      <div class="col-md-12 col-sm-12 col-xs-12 margin-top-30">
+        <p><a href="https://goo.gl/maps/kg1PhKzUpA82" target="_blank"><img src="/images/contact/map.jpg" class="img-responsive img-thumbnail" alt="WANJINLONG Google Map"></a></p>
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="media">
-          <a class="media-left"><i class="fa fa-fax"></i></a>
-          <div class="media-body">
-            <h4 class="media-heading">Fax</h4>
-            <p>{{ site.fax }}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="media">
-          <a class="media-left"><i class="fa fa-envelope"></i></a>
-          <div class="media-body">
-            <h4 class="media-heading">Email Us</h4>
-            <p><a href="mailTo:{{ site.email }}">{{ site.email }}</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="media">
-          <a class="media-left"><i class="fa fa-users"></i></a>
-          <div class="media-body">
-            <h4 class="media-heading">Follow Us</h4>
-            <ul class="list-inline margin-top-10">
-              <li><a href="{{ site.facebook }}" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x text-white"></i></span></a></li>
-              <li><a href="{{ site.twitter }}" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x text-white"></i></span></a></li>
-              <li><a href="{{ site.linkedin }}" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x text-white"></i></span></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 margin-top-30">
-      <p><a href="https://goo.gl/maps/kg1PhKzUpA82" target="_blank"><img src="/images/contact/map.jpg" class="img-responsive img-thumbnail" alt="WANJINLONG Google Map"></a></p>
     </div>
   </div>
 </section>

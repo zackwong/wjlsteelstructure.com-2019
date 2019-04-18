@@ -64,20 +64,22 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-4 col-xs-12">
-              <div class="footerContent">
-                <h5>Contact Us</h5>
-                <ul class="list-unstyled">
-                  <li><i class="fa fa-home"></i>{{ site.address }}</li>
-                  <li><i class="fa fa-phone"></i><a href="tel:{{ site.tel1 }}">{{ site.tel1 }}</a></li>
-                  <li><i class="fa fa-phone"></i><a href="tel:{{ site.tel2 }}">{{ site.tel2 }}</a></li>
-                  <li><i class="fa fa-fax"></i>{{ site.fax }}</li>
-                  <li><i class="fa fa-envelope-o"></i><a href="mailTo:{{ site.email }}">{{ site.email }}</a></li>
-                </ul>
-                <ul class="list-inline">
-                  <li><a href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
+              <div itemscope itemtype="http://schema.org/Organization">
+                <div class="footerContent">
+                  <h5>Contact Us</h5>
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-home"></i><span itemprop="address">{{ site.address }}</span></li>
+                    <li><i class="fa fa-phone"></i><a href="tel:{{ site.tel1 }}"><span itemprop="telephone">{{ site.tel1 }}</span></a></li>
+                    <li><i class="fa fa-phone"></i><a href="tel:{{ site.tel2 }}"><span itemprop="telephone">{{ site.tel2 }}</span></a></li>
+                    <li><i class="fa fa-fax"></i><span itemprop="faxNumber">{{ site.fax }}</span></li>
+                    <li><i class="fa fa-envelope-o"></i><a href="mailTo:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></li>
+                  </ul>
+                  <ul class="list-inline">
+                    <li><a itemprop="url" href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a itemprop="url" href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a itemprop="url" href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="col-sm-3 col-xs-12">
