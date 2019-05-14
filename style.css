@@ -2109,6 +2109,9 @@ a.thumbnail.active {
 .fa-circle:before {
   content: "\f111";
 }
+.fa-youtube-play:before {
+  content: "\f16a";
+}
 
 .sr-only {
   position: absolute;
