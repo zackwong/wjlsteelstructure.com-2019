@@ -10,14 +10,14 @@ description: This page shows market development environment, overall operation s
   <div class="container">{% for post in site.categories["news"] %}
     <div itemscope itemtype="http://schema.org/Article">
       <div class="thumbnail blogPostItem margin-bottom-30">
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-5 col-md-5">
           <div class="row">
             <a href="{{ site.url }}{{ post.url }}">
               <img src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}">
             </a>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-7 col-md-7">
           <div class="caption">
             <h3 class="text-center"><a itemprop="url" href="{{ site.url }}{{ post.url }}" class="blogTitle"><span itemprop="headline">{{ post.title }}</span></a></h3>
             <ul class="list-inline blogInfo text-center">
