@@ -44,7 +44,7 @@ wjlsteelstructure.com-2019
 下载及生成网站
 -----
 
-1. 下载网站源码: ``git clone git://github.com/zackwong/wjlsteelstructure.com-2019.git``
+1. 下载网站源码: ``git clone https://github.com/zackwong/wjlsteelstructure.com-2019.git``
 
 2. 进入源码根目录: ``cd wjlsteelstructure.com-2019``
 
