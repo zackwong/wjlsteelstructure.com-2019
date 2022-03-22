@@ -11,18 +11,15 @@
     <meta name="applicable-device" content="pc,mobile">
     <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/wanjinlong-icon.jpg">
     <meta name="apple-mobile-web-app-title" content="WANJINLONG">
-    <link type="text/css" rel="stylesheet" href="/assets/application.css">
-    <!--[if lt IE 9]>
-      <script src="/assets/html5shiv.min.js"></script>
-      <script src="/assets/respond.min.js"></script>
-    <![endif]-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138447231-1"></script>
+    <link type="text/css" rel="stylesheet" href="{{ site.url }}/assets/application.css">{% if page.category == 'home' %}
+    <script type="text/javascript" src="{{ site.url }}/assets/application.js"></script>{% endif %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRLJX42FHH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-138447231-1');
+      gtag('config', 'G-TRLJX42FHH');
     </script>
   </head>
   <body>
@@ -123,7 +120,6 @@
         </div>
       </div>
     </footer>
-    <div class="back-to-top"><a href="#"><img src="{{ site.url }}/images/assets/up.png" width="26" height="26" alt="Back To Top"></a></div>{% if page.category == 'home' %}
-    <script type="text/javascript" src="/assets/application.js"></script>{% endif %}
+    <div class="back-to-top"><a href="#"><img src="{{ site.url }}/images/assets/up.png" width="26" height="26" alt="Back To Top"></a></div>
   </body>
 </html>
