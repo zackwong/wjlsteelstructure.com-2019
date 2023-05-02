@@ -23,6 +23,14 @@ wjlsteelstructure.com-2019
       add_header Cache-Control "max-age=31536000";
       ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
       ssl_ciphers HIGH:!aNULL:!MD5:!DH;
+      gzip on;
+      gzip_min_length 1k;
+      gzip_buffers 4 16k;
+      gzip_http_version 1.1;
+      gzip_comp_level 5;
+      gzip_types text/html text/css text/xml application/javascript;
+      gzip_disable "MSIE [1-6]\.";
+      gzip_vary on;
     }
     server {
       listen 443 ssl http2;
