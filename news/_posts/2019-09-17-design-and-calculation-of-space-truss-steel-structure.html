@@ -25,12 +25,12 @@ description: Design and calculation method of technical space truss steel struct
 <p>The joints of space truss are articulated, and each node has three degrees of freedom, ignoring the influence of joint stiffness; the load acts on the nodes of space truss, and the members only bear the axial force; the material works in the elastic stage, which conforms to Hooke's law; the deformation of space truss is very small, and the influence caused by it is neglected, regardless of its geometric nonlinearity.</p>
 <p>1.3.2 Element stiffness matrix</p>
 <p>Single Rigid Matrix in Local Coordinate System of Bars: Finite Element of Space Bar System, 6 Degrees of Freedom of each Bar corresponds to 6 End Forces and 6 End Displacement</p>
-<p align="center"><img src="/images/news/{{ page.image }}-1.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-1.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>Let F, δ and K represent the nodal forces, nodal displacements and element stiffness matrices of member ij in the global coordinate system, respectively. In the global coordinate system, the relationship force between the joint force and the joint displacement of ij bar is as follows:</p>
-<p align="center"><img src="/images/news/{{ page.image }}-2.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-2.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>1.3.3 Total Stiffness Matrix and Equation of Structural Stiffness</p>
 <p>In the global coordinate system, the relationship force between the joint force and the joint displacement of ij bar is as follows</p>
-<p align="center"><img src="/images/news/{{ page.image }}-3.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-3.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>1.3.4 The total rigid matrix has the following characteristics:</p>
 <p>Matrix is symmetrical, so it is not necessary to list all elements in calculation, but only the upper triangle or the lower triangle. Matrix is sparse. Due to the limited number of connecting rods at each node of space truss structure, all elements in the total rigid matrix are zero except the principal diagonal and its adjacent elements. The non-zero elements are concentrated in the zonal area on both sides of the main diagonal line. When computer is stored in one-dimensional variable bandwidth, the computer capacity can be effectively saved. The bandwidth size is related to the node number of the grid. When the node number of the grid is numbered, the difference between the relevant node numbers should be reduced as far as possible.</p>
 <p>1.3.5 A Method of Processing Boundary Conditions in Structural Total Rigid Matrix</p>
@@ -51,7 +51,7 @@ description: Design and calculation method of technical space truss steel struct
 <p>2.3 Oblique boundary treatment：Oblique boundary refers to the boundaries that are constrained in the direction of oblique intersection with the global coordinates. There are two methods to deal with oblique boundary:</p>
 <p>2.3.1 An additional bar with a certain section area is set according to the displacement constraint of the boundary point. If the displacement of the node is zero along the normal direction of the boundary, an additional bar with a large stiffness is set in the direction. If the node is elastically constrained along the normal direction of the boundary, the section area of the additional bar is adjusted to satisfy the elastic constraint condition. The stiffness matrix is sometimes ill-conditioned by this method.</p>
 <p>2.3.2 Another method is to do coordinate transformation of node displacement on oblique boundary, which transforms node displacement vector in global coordinates into any oblique direction, and then treats it according to general boundary conditions.</p>
-<p align="center"><img src="/images/news/{{ page.image }}-4.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-4.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p><b>3. Calculation steps of finite element method of space truss system (displacement method of space truss)</b></p>
 <p>Computing sketch, numbering nodes and members;</p>
 <p>Calculate the length of member element and the angle cosine between member and integral coordinate axis.</p>
@@ -86,9 +86,9 @@ description: Design and calculation method of technical space truss steel struct
 <p>Welded hollow spherical joints are directly welded to hollow spherical joints by the steel pipe bars which intersect at the joints. The structure of the joints is simple. It has clear force transmission, simple structure, convenient connection and strong adaptability. As long as the cutting surface of the steel tube is perpendicular to the axis of the rod, the rod can be naturally centered on the hollow sphere without eccentricity, and can be connected with the rod in any direction.</p>
 <p>However, due to the large amount of steel used in joints, upside-down welding and vertical welding account for a large proportion; the length of rod blanking is required to be accurate; the dimension deviation will occur due to welding deformation, and the welding deformation allowance should be reserved.</p>
 <p>Welded hollow spheres are formed by hot pressing two steel plates into two hemispheres and then welding each other. It can be divided into two kinds: non-ribbed and ribbed. The steel of hollow sphere should adopt Q235 steel and Q345 steel. Rib plate can be used as platform or convex platform. When convex platform is used, its height should be less than 1 mm.</p>
-<p align="center"><img src="/images/news/{{ page.image }}-5.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-5.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>B. The outer diameter D of hollow sphere can be determined according to the requirement of connection structure. For easy welding, the gap between connecting rods on spherical surface should not be less than 10 mm (Fig. 4.5). According to this requirement, the outer diameter D of the hollow sphere can be preliminarily estimated as follows:</p>
-<p align="center"><img src="/images/news/{{ page.image }}-6.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-6.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>C. When the outer diameter of the hollow sphere is greater than 300 mm and the internal force of the rod is large enough to improve the bearing capacity, it can be stiffened in the sphere; when the outer diameter of the hollow sphere is greater than or equal to 500 mm, it should be stiffened in the sphere. The rib plate must be located in the axis plane of the member with the greatest axial force, and its thickness should not be less than the thickness of the spherical wall.</p>
 <p>D. When the diameter of the hollow sphere is 120-900mm, the design values of the compressive and tensile bearing capacity of the hollow sphere can be calculated according to the following formula:</p>
 <p>D=(d1+2a+d2)/theta</p>
@@ -96,35 +96,35 @@ description: Design and calculation method of technical space truss steel struct
 <p>D1, D2 - External Diameter (mm) of Two Steel Pipes with Angle of Theta</p>
 <p>E. The wall thickness of hollow sphere should not be less than 4mm, and meet the calculation requirements. The ratio of outer diameter to wall thickness of hollow spheres of latticed shells and double-layer latticed shells should be chosen in the range of D/t=25-45, the ratio of outer diameter to wall thickness of hollow spheres of single-layer latticed shells should be 20-35, the ratio of outer diameter of hollow spheres to outer diameter of main steel tubes should be 2.4-3.0, and the ratio of wall thickness of hollow spheres to wall thickness of main steel tubes should be 1.5-2.0.</p>
 <p>F. Pipe end should be grooved and lined at the joint of steel pipe rod and hollow ball. There should be a certain gap between pipe end and hollow ball to be welded through, so as to achieve equal strength between weld and steel pipe. The weld can be calculated according to butt weld. The weld quality should meet the requirements of grade II. Otherwise, it can only be calculated according to the inclined fillet weld.</p>
-<p align="center"><img src="/images/news/{{ page.image }}-7.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-7.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>4.5 Bolted spherical joints</p>
 <p>4.5.1 Structure of bolted spherical joints: The joints are joints of steel tubular members joined at joints by high strength bolts on steel spheres with threaded holes. Bolted spherical joints consist of steel balls, high strength bolts, sleeves, fastening screws, taper heads or sealing plates (Fig. 5.4.7), which can be used to connect circular steel tubular members with space grid structures such as grid trusses and double-layer latticed shells.</p>
-<p align="center"><img src="/images/news/{{ page.image }}-8.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-8.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>Steel ball should be 45 steel; high strength bolts, pins or fastening screws should be 40Cr, 20MnTiB; sleeve should be Q235B, Q345; taper head and sealing plate should be made of rod type materials.</p>
 <p>4.5.2 Steel Ball Size</p>
 <p>The stress state of steel balls is very complex, and there is no practical method for strength analysis of steel balls. The diameter of steel balls can be determined according to the joint structure. The size of steel ball depends on the angle of adjacent rods, the diameter of bolts and the length of bolts into the sphere.</p>
 <p>4.5.3 Bolt size</p>
 <p>High-strength bolts shall meet the requirements of grade 9.8 or 10.9. The design value of tensile capacity of each high-strength bolt shall be calculated according to the following formula:</p>
-<p align="center"><img src="/images/news/{{ page.image }}-9.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-9.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>In the formula, f refers to the design value of tensile strength of high strength bolts after heat treatment: for grade 10.9, 430N/mm2, for grade 9.8, 385N/mm2;</p>
 <p>Ae refers to the effective section area of the bolt. When the bolt is drilled with keyway or drilling hole, Ae should take the smaller value of the two at the thread or keyway or drilling hole.</p>
 <p>4.5.4 Sleeve</p>
 <p>Usually there is a longitudinal chute, the chute width is generally 1.5 ~ 2 mm larger than the pin diameter. Sometimes the sliding groove can be seated on the bolt, and a screw hole can be arranged on the sleeve.</p>
-<p align="center"><img src="/images/news/{{ page.image }}-10.jpg" class="img-responsive" alt="{{ page.title }}"></p>
-<p align="center"><img src="/images/news/{{ page.image }}-11.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-10.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-11.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>The distance between sleeve end and grooved end (or screw hole end) should make the effective section shear strength not less than that of pin (or screw) and not less than 1.5 times the width of chute or 6 mm. The sleeve end should be kept flat and the inner hole diameter is 1 mm larger than the bolt diameter.</p>
-<p align="center"><img src="/images/news/{{ page.image }}-12.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-12.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>4.5.5 Cone head and sealing plate: When the diameter of round steel tube rod is more than 76mm, cone head connection should be adopted. When the diameter of the round steel tube member is less than 76mm, the sealing plate connection can be adopted. The thickness of the sealing plate should be calculated according to the actual force, and should not be less than 4 mm and 1/5 of the outer diameter of the member. Any section connecting the welding seam and cone head should have the same strength as the connecting steel pipe. The gap between the root of the welding seam can be taken from 2 to 5 according to the wall thickness of the connecting steel pipe.</p>
-<p align="center"><img src="/images/news/{{ page.image }}-13.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-13.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>The cone head is an axisymmetric rotating thick shell. The finite element analysis shows that the bearing capacity of the cone head is mainly related to the thickness of the cone roof, the slope of the cone head, the diameter of the connecting rod and the stress concentration of the cone head structure.</p>
 <p>4.6 Welded steel plate joints</p>
 <p>Welded plate joint can be composed of cross joint plate and cover plate, which is suitable for connection of section steel members. The cross joint plate should be welded by inserting two steel plates with entrance, or by orthogonal welding of three plates.</p>
 <p>4.7 Pressure bearing</p>
 <p>4.7.1 Single-sided arc pressure support (Figure 4.20), angular displacement is not limited, suitable for medium and small span space trusses.</p>
 <p>4.7.2 Single-sided arc tension support (fig. 4.21) is suitable for large-span space trusses. In order to better transfer the tension to the support, stiffening ribs should be installed near the anchor bolts bearing the tension to enhance the stiffness of the joints.</p>
-<p align="center"><img src="/images/news/{{ page.image }}-14.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-14.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>4.7.3Double-sided arc pressure support: (Fig. 4.22) There are arc blocks between the support and the base plate. Both the upper and lower surfaces are cylindrical. The support can rotate and move.</p>
 <p>4.7.4 Spherical Joint Pressure Bearing: (Fig. 4.23) It can only rotate but not move. It is suitable for long-span space trusses supported by multiple supports.</p>
-<p align="center"><img src="/images/news/{{ page.image }}-15.jpg" class="img-responsive" alt="{{ page.title }}"></p>
+<p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-15.jpg" class="img-responsive" alt="{{ page.title }}"></p>
 <p>4.7.5 Plate Rubber Support: The material of arc support plate should be cast steel, and the one-sided arc support plate can also be processed with thick steel plate. Plate rubber bearing cushion can be made of multi-layer rubber and thin steel plate.</p>
 <p>Through the compression and shear deformation of rubber pad, the support can rotate and move. If the restriction is imposed in one direction, the support is one-way lateral displacement type, otherwise it is two-way lateral displacement type.</p>

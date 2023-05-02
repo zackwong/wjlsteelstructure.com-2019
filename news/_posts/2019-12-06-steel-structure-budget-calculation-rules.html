@@ -36,14 +36,14 @@ description: The steel structure project calculation rules are the primary jobs 
         <td class="text-center" rowspan="2">Light steel 1</td>
         <td class="text-center" rowspan="2">Embedded part</td>
         <td>Pre-embedded anchor</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-1.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-1.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>set</td>
         <td>Calculated separately according to specifications and length<br>Budget quotation: classified by specifications and Calculated quotation by number of sets<br>Internal settlement: calculated in tonnage = length (a + b) * theoretical weight of the specification, nuts, pads need to be calculated separately<br>(round steel theoretical weight = 0.00617 * d2)</td>
         <td>The total number: the number of anchor bolts (refer to the anchor bolt layout)</td>
       </tr>
       <tr>
         <td>Embedded parts</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-2.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-2.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>1. Steel column embedded parts:<br>(1)Column foot board: A*B* theoretical weight of this specification<br>(2)Stiffening plate: (a+c)*b/2* theoretical weight of the specification<br>2. The door frame column embedded parts:<br>(1)pre-embedded board: a1*b1* theoretical weight of this specification<br>(2)screw rod: (L1 + L2) * theoretical weight of the specification<br>(Steel plate theoretical weight = 7.85*t)<br>(round steel theoretical weight = 0.00617 * d2)</td>
         <td>The engineering quantity of the column foot board and stiffening plate of the steel column is incorporated into the steel column engineering quantity, and the embedded parts, such as door frame column is separately.</td>
@@ -52,7 +52,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light steel 2</td>
         <td>Steel Column Parts</td>
         <td>Steel column<br>(H types)</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-3.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-3.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>(1) Steel column (uniform section):<br>Flange plate = (steel column top elevation - column bottom plate bottom elevation - column foot plate thickness - top gusset plate thickness) * flange plate width * theoretical weight of the flange plate<br>Web plate = (steel column top elevation - column bottom plate bottom elevation - column foot plate thickness - top gusset plate thickness) * (this web plate section height - two flange plates thickness) * theoretical weight of the web plate<br>(2) Steel column (variable section):The calculation method of the flange plate is the same as that of the uniform-section column flange plate.<br>Web plate= (steel column top elevation - column bottom plate bottom elevation - column foot plate thickness - top gusset plate thickness) * (average of the maximum section height and minimum section height of the web plate - two flange plates thickness) * Theoretical weight of web plate<br>(3) steel column (uniform section)<br>Actual height of the steel column * theoretical weight of this model<br>[Theoretical weight calculation method: flange plate width * theoretical weight of the flange plate * 2 (web plate section height - two flange plates thickness) * theoretical weight of the web plate]<br>(theoretical weight of steel plate＝7.85*t)</td>
         <td>1. When calculating the steel column engineering quantity ,the engineering quantity of the relevant gusset plate should be calculated according to the detailed drawing of the nodes (for example, the shape of the gusset plate is irregular or the polygonal steel plate is calculated with the minimum external rectangular area * the theoretical weight of this specification) The amount of engineering is incorporated into the steel column.<br> 2. The project has a crane beam, and the beef leg (H-beam) is welded on the steel column. The calculation method is the same as the calculation method of the steel beam, and the engineering quantity is incorporated into the steel column engineering quantity.<br>3. The total weight: unit weight of the same steel column * numbers * number of points (refer to the steel frame layout)</td>
@@ -61,7 +61,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light steel 3</td>
         <td>Steel Beam Parts</td>
         <td>Steel Beam<br>(H types)</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-4.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-4.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>(1) Steel beams (the roof has a slope):<br>Flange plate = (the actual length of the beam - the thickness of the end gusset plate) * the width of the flange plate * the theoretical weight of the flange plate<br>Web plate = (the actual length of the beam - the thickness of the end gusset plate) * (the height of the web plate section - the thickness of the two flange plates) * the theoretical weight of the web plate<br>(2) Steel beam (honeycomb beam):<br>Actual length of the beam * theoretical weight of this model<br>[Theoretical weight calculation method: flange plate width * theoretical weight of the flange plate * 2 (web section height - two flange plates thickness) * theoretical weight of the web plate] (need to subtract hole area in which s hole area occupied by 0.3m2 or more on the web plate)<br>(theoretical weight of steel plate＝7.85*t)</td>
         <td>1. Actual length = [(horizontal length * slope) 2 + horizontal length 2] arithmetic square root, slope is the ratio of vertical height to horizontal width<br>2. when calculating the engineering quantity of the steel beam,the engineering quantity of relevant gusset plate will be calculated according to the detail of the detailed drawings of node (for example, the shape of the gusset plate is irregular or the polygonal steel plate is calculated with the minimum external rectangular area * the theoretical weight of the specification) The amount of engineering quantity is incorporated into the steel beam.<br>3.If the steel beam is hot-rolled H-shaped steel, high-frequency H-shaped steel, T-shaped steel, etc. They will be calculated according to the actual length * theoretical weight of the model [high-frequency H-shaped steel theoretical weight calculation method: flange plate width *  theoretical weight of flange plate 2 + (web plate section height - two flange plate thickness) * theoretical weight of the web plate; hot rolled H-beam is the finished products, so the theoretical weight please check the weight table]</td>
@@ -70,7 +70,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light steel 4</td>
         <td rowspan="2">Purlin and angle brace</td>
         <td>purlin</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-5.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-5.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Length * theoretical weight of the specification<br>[Note: If the purlin is C-type steel, its theoretical weight (kg/m) = (h+2b+2c- 4t)*t*0.00785]</td>
         <td>1. Calculate the engineering quantity of joint plate (steel plate area * theoretical weight of this specification) according to the detailed drawing of the purlins node, and the engineering quantity will be included in the roof purlin.<br>2. the total weight: the weight of a single purlin * the number of purlins(refer to the purlin layout)</td>
@@ -78,7 +78,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light steel 5</td>
         <td>Angle brace</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-6.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-6.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Oblique length * theoretical weight of this specification<br>1. If the deep drawing has not yet been finished, calculate the engineering quantity according to the construction drawing (without node): [As shown in the figure: Angle brace length = (the height of the steel beam h2+ the horizontal distance a2 of angle brace from the end of the steel beam connected to the end of the rafter)The square root of the arithmetic +50mm]<br>2. If the deep drawing has been finished, the length of the angle brace is calculated according to the length in the deep drawing.<br>[Theoretical weight of angle steel (kg/m) = 0.00795* t* (2 b-t) or you can check the hardware manual]</td>
         <td>1. Calculate the engineering quantity of joint plate (steel plate area * theoretical weight of this specification) according to the detailed drawing of the joints, and the engineering quantity will be included in the roof purlin.<br>2. The total weight: the weight of a single angle brace * the number of angle brace(refer to the purlin layout)</td>
@@ -87,7 +87,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light steel 6</td>
         <td rowspan="5">Roof small Pieces</td>
         <td>Brace</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-7.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-7.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>(purlin distance+ add 60mm at both ends) * Theoretical weight of this specification<br>〔theoretical weight of round steel(kg/m)＝0.00617*d2〕</td>
         <td>1. If it is near the gutter side, the length of the brace = the distance between the purlins +one end 60mm<br>2. the total weight: weight of single bar* number of bars (refer to the layout of purlin)</td>
@@ -95,7 +95,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light steel 7</td>
         <td>Horizontal support	</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-8.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-8.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Oblique length * theoretical weight of this specification<br>[As shown in the figure: oblique length = (span length a2 + depth length b2)] arithmetic square root<br>[The theoretical weight of round steel (kg/m) = 0.00617*d2]<br>[Theoretical weight of angle steel (kg/m) = 0.00795* t* (2 b-t) or you can check the hardware manual]</td>
         <td>1. The engineering amount of angle steel at the four ends of the horizontal support is incorporated into the horizontal support calculation<br>2. Total weight:weight of single horizontal support * horizontal support numbers (refer to the roof structure layout)</td>
@@ -103,7 +103,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 8</td>
         <td>Round tube pressure rod</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-9.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-9.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Actual length * theoretical weight of this specification<br>[As shown in the figure: length = (axis span length a-2b-2c)]<br>The theoretical weight of round steel (kg/m) = 0.02466 * wall thickness * (steel pipe diameter - wall thickness)</td>
         <td>1. Calculate the gusset plate engineering quantity (steel plate area * the theoretical weight of the specification) according to the gusset detailed drawing, and the engineering quantity is incorporated into the steel beam.<br>2. Total weight: the weight of a single round pipe pressing rod * the number of round pipe pressing rods (refer to the roof structure layout)</td>
@@ -111,7 +111,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 9</td>
         <td>Steel plate gutter<br>(stainless steel gutter)</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-10.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-10.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Actual length * spread width * theoretical weight of the specification<br>(Theoretical weight of steel plate = 7.85 * t)</td>
         <td>1. The head plate at the two ends of the gutter is calculated based on the steel plate area * theoretical weight, and the engineering amount is incorporated into the gutter.<br>2. Total weight: the weight of a single gutter * the number of gutters (refer to the roof architectural drawing)</td>
@@ -128,7 +128,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light Steel 11</td>
         <td rowspan="2">Wall Panel and Small Components</td>
         <td>Wall beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-11.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-11.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Length * Theoretical weight of the specification<br>[Note: If the wall beam is C-section steel, its theoretical weight (kg / m) = (h + 2b + 2c- 4t) * t * 0.00785]</td>
         <td>1. Calculate the gusset plate engineering quantity (plate area * theoretical weight of the specification) according to the detailed drawings of the wall beam joints, and the engineering quantity is incorporated into the steel column.<br>2. If the wall beam meets the door and window opening, the length should be deducted from the size of the door and window opening. The farthest end wall beam should protrudes some distance from the steel column (marked in the drawing).<br>3. Total weight: the weight of a single wall beam * the number of wall beams (refer to the wall beam layout)</td>
@@ -136,7 +136,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 12</td>
         <td>Vertical support</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-12.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-12.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Oblique length * theoretical weight of the specification<br>1. If the detailed drawing has not yet been finished, the engineering quantity can only be calculated according to the construction drawing: as shown in the figure: oblique length = [(vertical support height b-distance between the gusset plates at both ends) 2+ (distance between two steel columns a- Distance between the two end gussets) 2] Arithmetic square root] + 50mm<br>2. If the detailed drawing has been finished, the length will be calculated according to the detailed drawing.<br>The vertical support is a stepped angle steel support, and the angle steel connecting the two angle steels is calculated according to the distance between the two angle steels * theoretical weight * number of steps</td>
         <td>1. Total weight: weight of single vertical support* number of vertical support (refer to wall beam layout)<br>2. Calculate the gusset plate engineering quantity (steel plate area * theoretical weight of the specification) according to the detailed drawing of support joints, and the engineering quantity is incorporated in the vertical support.</td>
@@ -153,7 +153,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 14</td>
         <td>Wall Brace</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-13.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-13.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>(Wall beam distance + 60mm at each end) * Theoretical weight of this specification<br>(Theoretical weight of round steel (kg / m) = 0.00617 * d2)</td>
         <td>1. If it is near the gutter side, the length of the brace = the distance between the wall purlins + 60mm<br>2. the total weight: weight of single brace* number of braces (refer to the layout of wall purlin)</td>
@@ -162,7 +162,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light Steel 15</td>
         <td>Crane</td>
         <td>Crane beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-14.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-14.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The calculation method is the same as that of the steel beam:<br>Flange plate = (length of crane beam-end gusset plate thickness) * flange plate width * theoretical weight of flange plate<br>Web plate = (length of crane beam-thickness of end gusset plate) * (height of web plate section -thickness of two flange plates) * theoretical weight of web plate</td>
         <td>1. When calculating the crane beam quantity, calculate the relevant gusset plate engineering quantity according to the detailed drawings of the joints (if the gusset plate shape is irregular or polygonal, steel plate is calculated with its minimum external rectangular area * the theoretical weight of the specification) The engineering amount is incorporated into the crane beam.<br>2. Total weight: weight of single crane beam * number of crane beams</td>
@@ -171,7 +171,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light Steel 16</td>
         <td rowspan="2">System Part</td>
         <td>Braking System</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-15.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-15.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The actual length of the components that form the braking system * The theoretical weight of the specification<br>(Brake system is generally angle steel, channel steel)<br>[Theoretical weight of angle steel (kg / m) = 0.00795 * t * (2 b-t) or you can check the hardware manual]<br>[Theoretical weight of channel steel (kg / m) = (h + 2b- 2t) * t * 0.00785]</td>
         <td>1. When calculating the braking system engineering quantity, calculate the relevant gusset plate engineering quantity according to the detailed drawings of the joints (if the gusset plate shape is irregular or polygonal, steel plate is calculated with its minimum external rectangular area * the theoretical weight of the specification) <br>2. Total weight: weight of single braking system * number of braking system(The number of braking systems is equal to the number of segments of the crane beam)</td>
@@ -179,7 +179,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 17</td>
         <td>Car stop</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-16.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-16.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The calculation method is the same as that of the steel column:<br>Flange plate = (car stop height-bottom plate thickness) * flange plate width * theoretical weight of flange plate<br>Web plate = (car stop height- bottom plate thickness) * (height of this web section-thickness of two flange plates) * theoretical weight of web plate<br>(If you actually encounter different car stop structures, the calculation will be based on actual calculations)</td>
         <td>1. When calculating the car stop engineering quantity, calculate the relevant gusset plate engineering quantity according to the detailed drawings of the joints (if the gusset plate shape is irregular or polygonal, steel plate is calculated with its minimum external rectangular area * the theoretical weight of the specification) <br>2. Total weight: weight of single car stop * number of car stop(generally there are one car stop in each end of crane beam )</td>
@@ -188,7 +188,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light Steel 18</td>
         <td rowspan="2">Floor Beam Part</td>
         <td>Main beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-17.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-17.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The calculation method is the same as that of the steel beam:<br>Flange plate = (beam length-distance between end gusset plate and beam a * 2) * flange plate width * theoretical weight of flange plate<br>Web plate= (Beam length-distance from end gusset plate to beam a * 2) * (web plate section height-thickness of two flange plates) * theoretical weight of web plate<br>[Beam length = distance between the centerline of the column web plate-web plate thickness of the column (or flange plate thickness)]</td>
         <td>1. When calculating the engineering amount of floor main beams, calculate the relevant gusset plate engineering amount in accordance with the detailed joints drawing and incorporate the amount into the main beam.<br>2. Total weight: the weight of a single main beam * the number of main beams (refer to the floor beam layout)</td>
@@ -196,7 +196,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 19</td>
         <td>Secondary beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-18.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-18.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The calculation method is the same as that of the steel beam:<br>Flange plate = (beam length-distance between end gusset plate and beam a * 2) * flange plate width * theoretical weight of flange plate<br>Web plate= (Beam length-distance from end gusset plate to beam a * 2) * (web plate section height-thickness of two flange plates) * theoretical weight of web plate<br>[Beam length = distance between the centerline of the main beam web plate-web plate thickness of the main beam )</td>
         <td>1. When calculating the engineering amount of floor secondary beams, calculate the relevant gusset plate engineering amount in accordance with the detailed joints drawing and incorporate the amount into the secondary beam.<br>2. Total weight: the weight of a single secondary beam * the number of secondary beams (refer to the floor beam layout)</td>
@@ -205,7 +205,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light Steel 20</td>
         <td rowspan="3">Clerestory</td>
         <td>Clerestory frame</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-19.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-19.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Component ①, ②, ③, ④, ⑤ total spread length * theoretical weight of the specification</td>
         <td>1. When calculating the engineering quantity of clerestory frame, calculate the relevant gusset plate engineering amount according to the detailed joints drawing and incorporate into the gusset plate separately.<br>2. Total weight: the weight of a single clerestory frame * the number of clerestory frame (refer to the layout of the clerestory)</td>
@@ -213,7 +213,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 21</td>
         <td>Clerestory beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-20.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-20.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The calculation method is the same as that of the steel beam:<br>Flange plate = (beam length-end gusset plate thickness) * flange plate width * theoretical weight of flange plate<br>Web plate = (beam length-end gusset plate thickness) * (web plate section height-thickness of two flange plates) * theoretical weight of web plate</td>
         <td>1. When calculating the engineering quantity of clerestory beam, calculate the relevant gusset plate engineering amount according to the detailed joints drawing and incorporate into the gusset beam.<br>2. Total weight: the weight of a single clerestory beam * the number of clerestory beam (refer to the layout of the clerestory)</td>
@@ -226,7 +226,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Light Steel 23</td>
         <td rowspan="5">Canopy</td>
         <td>Cantilever beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-21.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-21.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The calculation method is the same as that of the steel beam:<br>Flange plate = (cantilever beam length-end gusset plate thickness) * flange plate width * theoretical weight of flange plate<br>Web plate = (cantilever beam length-end gusset plate thickness) * (web plate section height-thickness of two flange plates) * theoretical weight of web plate<br>(Such as the calculation rules of variable section beams is same with that of steel frame beams)</td>
         <td>1. When calculating the engineering quantity of cantilever beam, calculate the relevant gusset plate engineering amount according to the detailed joints drawing and incorporate into the cantilever beam.<br>2. Total weight: the weight of a single cantilever beam * the number of cantilever beam (refer to the canopy structural drawing)</td>
@@ -234,7 +234,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 24</td>
         <td>Steel gutter<br>(Stainless steel gutter)</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-22.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-22.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Actual length * spread width * theoretical weight of the specification<br>(Theoretical weight of steel plate = 7.85 * t)</td>
         <td>1. The head plate at the two ends of the gutter is calculated according to the steel plate area * theoretical weight, and the engineering amount is incorporated into the steel gutter(stainless steel gutter).<br>2. Total weight: the weight of a single gutter * the number of gutters (refer to the canopy structural drawing)</td>
@@ -242,7 +242,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 25</td>
         <td>Self-folding steel plate</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-23.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-23.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Spread width of steel plate * canopy length * Theoretical weight of this specification<br>Theoretical weight = (a + a + c-2t) * t * 7.85</td>
         <td></td>
@@ -271,7 +271,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 29</td>
         <td>Stair beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-24.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-24.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The calculation method is the same as that of the steel beam:<br>Flange plate = (total length of stair beam-end gusset plate thickness) * flange plate width * plate thickness * theoretical weight of flange plate<br>Web plate = (total length of stair beam-thickness of end gusset plate) * (height of web section-thickness of two flange plates) * theoretical weight of web plate<br>(As shown in the figure: the total length of the stair beam = the length of the inclined stair beam a + b + the length of the resting platform c)</td>
         <td>1. When calculating the engineering amount of stair beams, calculate the engineering amount of related gusset plates according to the detailed joints drawings and incorporate the engineering amount into the stair beams.<br>2. Total weight: the weight of a single stair beam * the number of stair beams</td>
@@ -279,7 +279,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 30</td>
         <td>Step board</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-25.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-25.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Stepping board spread width * actual net width * theoretical weight of this specification<br>(As shown in the figure: stepped board spread width = a + b + c)</td>
         <td>Total weight: weight of single step board * number of step boards</td>
@@ -287,7 +287,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>Light Steel 31</td>
         <td>handrail</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-26.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-26.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Extension meter * The theoretical weight of this specification<br>(As shown in the figure: the meters of the handrail include the meters of the vertical bar and the meters of the inclined railing)</td>
         <td>If the material of the handrail and railing is stainless steel, it is calculated by extension meter.</td>
@@ -329,7 +329,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Heavy Steel 1</td>
         <td>Roof Frame</td>
         <td>Steel Roof Frame</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-27.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-27.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</p></td>
         <td>The actual net length of the upper and lower chords, upright rods and diagonal braces constituting the steel roof frame * the theoretical weight of the corresponding specifications</td>
         <td>1. When calculating the roof frame engineering quantity, calculate the relevant gusset plate engineering quantity according to the detailed drawings of the joints (if the gusset plate shape is irregular or polygonal, steel plate is calculated with its minimum external rectangular area * the theoretical weight of the specification) and incorporated the engineering quantity into steel roof frame.<br>2. Total weight: weight of single roof frame * number of same units</td>
@@ -338,7 +338,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Heavy Steel 2</td>
         <td>Steel Column</td>
         <td>Lattice column</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-28.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-28.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>1.Calculate the weight of the next two steel columns according to the calculation rules of Light Steel steel columns.<br>2.The actual net length between the two steel web plates*the theoretical weight of the corresponding specifications to calculate the weight of steel connecting components(normally the connecting components are angle steel)</td>
         <td>1. When calculating the lattice column engineering quantity, calculate the relevant gusset plate engineering quantity according to the detailed drawings of the joints (if the gusset plate shape is irregular or polygonal, steel plate is calculated with its minimum external rectangular area * the theoretical weight of the specification) and incorporated the engineering quantity into lattice column.<br>2. When calculating the connecting components, the second line should be mentioned.</td>
@@ -368,21 +368,21 @@ description: The steel structure project calculation rules are the primary jobs 
         <td rowspan="3">High level 1</td>
         <td rowspan="3">Steel Column Part</td>
         <td>Box type column (polygonal column, special-shaped column)</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-29.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-29.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The first section of steel column: (steel column height-column foot thickness) * (side length deduct the overlap thickness * the theoretical weight of this specification); if it is n-sided shape, the total weight is the sum of the weights of n sides<br>Steel columns with more than one section: the actual height of the steel column * (side length deducts the overlap thickness * the theoretical weight of the specification); if it is n-sided, the total weight is the sum of the weights of n sides<br>(Theoretical weight of steel plate = 7.85 * t)</td>
         <td>1. The elevation of each section of the steel column refers to the steel column table (or steel column elevation)<br>2. Gusset plates such as partitions and plywood in box-shaped columns are calculated by referring to the "column-to-beam connection node", and the engineering quantity incorporated into the column.<br>3. If the hole area is less than 0.3m2, the hole area is not deducted; if it is more than 0.3m2, the hole area should be deducted<br>4.The number of bolts sets on the column is calculated separately according to the number of sets</td>
       </tr>
       <tr>
         <td>Cross column</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-30.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-30.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The first section of steel column: (steel column height-column foot plate thickness) * (weight per meter of one H-shaped steel column forming the cross column + weight per meter of two T-shaped steels forming the cross column)<br>Steel columns with more than one section: actual height of the steel columns * (weight per meter of one H-shaped steel column forming the cross column + weight per meter of two T-shaped steels forming the cross column)</td>
         <td>1. The elevation of each section of the steel column refers to the steel column table (or the steel column elevation)<br>2. The gusset plates such as the partitions of the cross column are calculated by referring to the "connection joints between the column and the beam", and the engineering quantity is incorporated into the column</td>
       </tr>
       <tr>
         <td>Round pipe column</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-31.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-31.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>he first section of steel column: (steel column height-column foot plate thickness) * the theoretical weight of the round tube of this specification<br>Steel columns with more than one section: the actual height of the steel column * the theoretical weight of the round pipe of this specification<br>Round pipe theoretical weight (kg / m) = 0.02466 * wall thickness * (steel pipe diameter-wall thickness)</td>
         <td>1. The elevation of each section of the steel column refers to the steel column table (or the steel column elevation)<br>2. The gusset plates such as partitions of round pipe columns are calculated with reference to the "column-to-beam connection joints", and the engineering quantities are incorporated into the columns.<br>3. Circumferential ring plates of round pipe columns are calculated according to the smallest circumscribed rectangle. If the hole area is within 0.3m2, the hole area is not deducted; if it is above 0.3m2, the hole area should be deducted.</td>
@@ -391,7 +391,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>High level 2</td>
         <td rowspan="2">Level Beam</td>
         <td>Main beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-32.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-32.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The calculation method is the same as that of the steel beam:<br>Flange plate = (beam length-distance between end gusset plate and beam a * 2) * flange plate width * theoretical weight of flange plate<br>Web plate= (Beam length-distance from end gusset plate to beam a * 2) * (web plate section height-thickness of two flange plates) * theoretical weight of web plates<br>[Beam length = distance from the centerline of the column web plate-web plate thickness of the column (or flange plate thickness)]</td>
         <td>1. When calculating the engineering amount of level main beams, calculate the relevant gusset plate engineering amount according to the detailed joints drawing and incorporate the amount into the main beam.<br>2. Total weight: the weight of a single main beam * the number of main beams (refer to the level beam layout)</td>
@@ -399,7 +399,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>High level 3</td>
         <td>Secondary Beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-33.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-33.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The calculation method is the same as that of the steel beam:<br>Flange plate = (beam length-distance between end gusset plate and beam * 2) * flange plate width * theoretical weight of flange plate<br>Web plate= (Beam length-distance from end gusset plate to beam  * 2) * (web plate section height-thickness of two flange plates) * theoretical weight of web plates<br>[Beam length = distance from the centerline of the main beam web plate-web plate thickness of the main beam web plate</td>
         <td>1. When calculating the engineering amount of level secondary beams, calculate the relevant gusset plate engineering amount according to the detailed joints drawing and incorporate the amount into the secondary beam.<br>2. Total weight: the weight of a single secondary beam * the number of secondary beams (refer to the level beam layout)</td>
@@ -408,7 +408,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>High level 4</td>
         <td rowspan="2">Steel beam</td>
         <td>Box-type beam</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-34.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-34.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>Box-type beam: actual net beam length * theoretical weight of the specification<br>Box-type beam theoretical weight: [B * thickness * 7.85kg / m3 * 2 + (A-2a) * thickness * 7.85kg / m3 * 2]</td>
         <td>1. The gusset plates such as partitions plate, plywood, etc. in the box-type beam are calculated by referring to the detailed joints drawing, and the engineering amount is incorporated into the calculation of the beam.<br>2. If the hole area of gusset plate such as a single stiffener plate or partition, plywood and other n is less than 0.3m2,don’t need to deduct the hole area; if it is more than 0.3m2, the hole area should be deducted.<br>3. Total weight: the weight of a single box-type beam * the number (refer to the layout of the steel beam)</td>
@@ -446,7 +446,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Space 1</td>
         <td rowspan="2">Truss Part</td>
         <td>Chord</td>
-        <td rowspan="2"><p align="center"><img src="/images/news/{{ page.image }}-35.jpg" class="img-responsive" alt="{{ page.title }}"></p><br>The above picture shows the round tube truss. If it is rectangular tubes and angle steel trusses, the calculation rules are the same as those for round tubes, but the theoretical weight is different.</td>
+        <td rowspan="2"><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-35.jpg" class="img-responsive" alt="{{ page.title }}"></p><br>The above picture shows the round tube truss. If it is rectangular tubes and angle steel trusses, the calculation rules are the same as those for round tubes, but the theoretical weight is different.</td>
         <td>T</td>
         <td>Chord length * Theoretical weight of round pipe of this specification</td>
         <td>1. When calculating, calculate the relevant gusset plate engineering quantity according to the detailed joints drawing (if the gusset plate is irregular or the polygonal steel plate ,then calculated by its minimum circumscribed rectangular area * theoretical weight), and the engineering quantity is incorporated into the gusset plate.<br>2.The connecting ball at the end is calculated based on the volume * theoretical weight</td>
@@ -462,7 +462,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Space 3</td>
         <td>Net frame part</td>
         <td>Net frame</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-36.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-36.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>T</td>
         <td>The actual net length of the connecting rod between the two net frame balls * the theoretical weight of the corresponding specification</td>
         <td>The net frame ball is calculated based on the volume of ball * theoretical weight	</td>
@@ -489,7 +489,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>Space 6</td>
         <td></td>
         <td>Purlin hanger base</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-37.jpg" class="img-responsive" alt="{{ page.title }}"></p><br>Axonometric diagram<br>Connecting plate uses for upper chord of truss and purlin hanger</td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-37.jpg" class="img-responsive" alt="{{ page.title }}"></p><br>Axonometric diagram<br>Connecting plate uses for upper chord of truss and purlin hanger</td>
         <td>T</td>
         <td>Illustrated size of steel plate (calculated by area) * Unit theoretical weight</td>
         <td>Irregular or polygonal steel plates are calculated by the minimum circumscribed rectangular area * the thickness * the unit theoretical mass</td>
@@ -520,7 +520,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>1</td>
         <td rowspan="3">Roof panel</td>
         <td>Upper layer plate</td>
-        <td rowspan="3"><p align="center"><img src="/images/news/{{ page.image }}-38.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td rowspan="3"><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-38.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>m2</td>
         <td>(steel frame span length+ length of wall beam protruding from steel column-width of steel plate gutter + length of roof panel extending from gutter 150mm + roof ridge upwards length 50mm) * roof slope coefficient * (total length of bay + length of wall beam extending from steel column)</td>
         <td rowspan="3">1. If there is a skylight or clerestory,the area of skylight and clerestory should be deducted. <br>2. as for the opening of the fan and the opening of the contact should be open on-site,and the area should not be deducted.<br>3. In this diagram, the gutter is not an external extension. If the gutter is an external extension, the length of the roof panel = steel frame span length + the length of the roof panel extending the steel gutter 150mm + the roof ridge upwards length 50mm, that is, there is no need to subtract the steel plate gutter width, and the length of wall beam protruding the steel column will not increase. </td>
@@ -541,7 +541,7 @@ description: The steel structure project calculation rules are the primary jobs 
         <td>4</td>
         <td rowspan="4">Wall Panel</td>
         <td>External layer plate</td>
-        <td rowspan="3"><p align="center"><img src="/images/news/{{ page.image }}-39.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td rowspan="3"><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-39.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>m2</td>
         <td>(Height of the wall-height of the brick wall + height of the part protruding into the brick wall) * (total length of the bay+ length of the steel beam protruding from the steel column)-door and window opening area</td>
         <td>For example, the hole to be opened in the contract list is an on-site opening, and the area should not be deducted.</td>
@@ -563,7 +563,7 @@ description: The steel structure project calculation rules are the primary jobs 
       <tr>
         <td>7</td>
         <td>Internal eave coverage plate</td>
-        <td><p align="center"><img src="/images/news/{{ page.image }}-40.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
+        <td><p align="center"><img src="{{ site.url }}/images/news/{{ page.image }}-40.jpg" class="img-responsive" alt="{{ page.title }}"></p></td>
         <td>m2</td>
         <td>Front elevation: (Elevation of the eave coverage top-Eaves elevation) * Total length of the bay<br>Side Elevation (Symmetry): [(Elevation of Eaves coverage top-Eaves Elevation) + (Elevation of Eaves coverage top-Elevation of Roof ridge)] * Half of total bay length / 2 * Number of symmetrical blocks<br>Side elevation (asymmetry): [(elevation of eave coverage top-eaves elevation) + (elevation of eave coverage top-roof ridge elevation)] * the corresponding depth length / 2, the same method is used to calculate the other inner eave coverages</td>
         <td>This calculation method is suitable for the situation that the eave coverage plate didn’t exceed the ridge, if on the contrary, calculate based on the diagram size.</td>
