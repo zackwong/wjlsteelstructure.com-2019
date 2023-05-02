@@ -19,7 +19,8 @@ wjlsteelstructure.com-2019
       index index.html;
       root /srv/wjlsteelstructure.com-2019/_site;
       error_page 404 /Error.html;
-      add_header Strict-Transport-Security "max-age=15768000" always;
+      add_header Strict-Transport-Security "max-age=31536000" always;
+      add_header Cache-Control "max-age=31536000";
       ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
       ssl_ciphers HIGH:!aNULL:!MD5:!DH;
     }
